@@ -87,23 +87,44 @@ characters. The implementation of such method will be similar to the binary sear
 ## Program Design
 
 Your program must contain three classes:
+
   * Dictionary class to represent the collection of words read in from the input file (i.e., the dictionary used by the program). This class is responsible for performing queries in the dictionary. The Dictionary class should implement the following interface:
-  
-  *public interface DictionaryInterface {
-/\* \*
-\*This method determines if a given word is in this Dictionary.
-\*@param word the word to be checked
-\*@return true if the word is in this Dictionary,
-\*false otherwise
-\*/
 
-boolean findWord ( String word );
+  public interface DictionaryInterface {
 
-/\* \*
-\* This method determines if a given prefix is a prefix of a word that exists \*in this Dictionary.
-\*@param prefix the prefix to be checked
-\*@return true if the prefix is in this Dictionary,
-\*false otherwise
-\*/
-boolean findPrefix ( String prefix );
-}
+	/\*\*
+	\*This method determines if a given word is in this Dictionary.
+	\*@param word the word to be checked
+	\*@return true if the word is in this Dictionary,
+	\*false otherwise
+	\*/
+	boolean findWord ( String word );
+
+	/\* \*
+	\* This method determines if a given prefix is a prefix of a word that exists \*in this Dictionary.
+	\*@param prefix the prefix to be checked
+	\*@return true if the prefix is in this Dictionary,
+	\*false otherwise
+	\*/
+	boolean findPrefix ( String prefix );
+  }
+
+  * LetterBag class to represent the letters entered by the user/player. This class is responsible for creation of all the different words. It should use the Dictionary object to accomplish its task. The LetterBag class should implement the following interface:
+
+  public interface LetterBagInterface {
+
+  	/\*\*
+  	 \* This method determines the list of words that can be created from a 
+  	 \* given LetterBag object that are present in the 
+  	 \* provided Dictionary object dict.
+  	 \* @param dict the Dictionary object to be used
+  	 \* @return a list of valid words in alphabetical order
+  	 \*/
+  	 ArrayList<String> getAllWords ( Dictionary dict );
+  }
+
+  * FindWords class that is the runable program containing the main() method. This class is responsible for parsing the command line argument, reading the input file, reading the user input, creating the Dictionary and LetterBag objects and then using them to display the results. This class may have methods other than the main() method.
+
+You will need to have files specifying the above interfaces. You may use additional classes, if you wish. 
+
+## Programming Rules
