@@ -131,7 +131,6 @@ Your program must contain three classes:
   	/\*\*
 
   	 \* This method determines the list of words that can be created from a 
-  	 
   	 \* given LetterBag object that are present in the 
   	 
   	 \* provided Dictionary object dict.
