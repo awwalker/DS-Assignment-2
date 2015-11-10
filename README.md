@@ -88,6 +88,7 @@ characters. The implementation of such method will be similar to the binary sear
 
 Your program must contain three classes:
   * Dictionary class to represent the collection of words read in from the input file (i.e., the dictionary used by the program). This class is responsible for performing queries in the dictionary. The Dictionary class should implement the following interface:
+  
   *public interface DictionaryInterface {
 /\* \*
 \*This method determines if a given word is in this Dictionary.
