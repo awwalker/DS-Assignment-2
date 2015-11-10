@@ -17,7 +17,7 @@ The goal of this programming project is for you to master (or at least get pract
 
 You may use any Java classes for reading from input files.
 
-### Input File
+#### Input File
 
 Your program is given the name of the input text file as its command line argument (the first and only argument used by this program). The text file contains a dictionary that is used by the program. You may assume that the dictionary contains a sorted list of words, one per line. A word is any sequence of lower case letters.
 
@@ -36,11 +36,11 @@ Your program may not read the input file more than once.
 
 Your program may not modify the input file.
 
-### Output File
+#### Output File
 
 Your program does not produce any output files. 
 
-### User Input
+#### User Input
 
 The user should be prompted to enter a string of characters (letters only, no spaces, commas, or any other characters). Your program
 should accept both upper case and lower case letters. If the user enters any uppercase letters, your program should convert them to
@@ -49,7 +49,7 @@ lowercase before proceeding.
 If the user enters any characters other than letters, it is an error. The program should display an error message and terminate. The error
 message should indicate what went wrong (for example: ”Error: you entered an invalid character; only letters can be accepted”).
 
-### Console Output
+#### Console Output
 
 The program should display in lower case letters all anagrams of the user typed letters that are valid words based on the dictionary that
 the program uses. The program should display the total number of unique words found (for example: "Found 3 words"), followed
@@ -64,7 +64,7 @@ found".
 Once the user has entered the letters, the program displays all the words in the dictionary that can be formed as combinations of all the
 letters entered by the user.
 
-### Creating all Possible Words
+#### Creating all Possible Words
 
 The task of creating possible words should be achieved recursively using the backtracking technique. Make sure to review the examples
 used in class for creating all possible strings from the given set of characters.
@@ -76,7 +76,7 @@ not follow the paths that do not lead to words. For example, if the user enters 
 of characters starting with zz, but there are no words in your dictionary that start with zz, then there is no point in generating all of the
 sequences that start with zz - your algorithm should skip them.
 
-### Searching in the Dictionary
+#### Searching in the Dictionary
 
 In order to determine if a given sequence is a valid word in a dictionary, your program needs to perform searches. You need to implement
 your own search method to achieve this. You should use a recursive implementation of a binary search.
