@@ -89,21 +89,19 @@ characters. The implementation of such method will be similar to the binary sear
 Your program must contain three classes:
   * Dictionary class to represent the collection of words read in from the input file (i.e., the dictionary used by the program). This class is responsible for performing queries in the dictionary. The Dictionary class should implement the following interface:
     *public interface DictionaryInterface {
-/* *
-* T h i s m e t h o d d e t e r m i n e s if a g i v e n w o r d
-* is in t h i s D i c t i o n a r y .
-* @ p a r a m w o r d the w o r d to be c h e c k e d
-* @ r e t u r n t r u e of the w o r d is in t h i s D i c t i o n a r y ,
-* f a l s e o t h e r w i s e
-*/
+/\* \*
+\*This method determines if a given word is in this Dictionary.
+\*@param word the word to be checked
+\*@return true if the word is in this Dictionary,
+\*false otherwise
+\*/
+
 boolean findWord ( String word );
-/* *
-* T h i s m e t h o d d e t e r m i n e s if a g i v e n
-* p r e f i x is a p r e f i x of a w o r d t h a t e x i s t s in
-* t h i s D i c t i o n a r y .
-* @ p a r a m p r e f i x the p r e f i x to be c h e c k e d
-* @ r e t u r n t r u e if the p r e f i x is in t h i s D i c t i o n a r y ,
-* f a l s e o t h e r w i s e
-*/
+/\* \*
+\* This method determines if a given prefix is a prefix of a word that exists \*in this Dictionary.
+\*@param prefix the prefix to be checked
+\*@return true if the prefix is in this Dictionary,
+\*false otherwise
+\*/
 boolean findPrefix ( String prefix );
 }
