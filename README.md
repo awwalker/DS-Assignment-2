@@ -131,6 +131,7 @@ Your program must contain three classes:
   	/\*\*
 
   	 \* This method determines the list of words that can be created from a 
+  	 
   	 \* given LetterBag object that are present in the 
   	 
   	 \* provided Dictionary object dict.
@@ -150,3 +151,15 @@ Your program must contain three classes:
 You will need to have files specifying the above interfaces. You may use additional classes, if you wish. 
 
 ## Programming Rules
+
+You must document all your code using Javadoc. Your class documentation needs to provide a description of what it is used for and the name of its author. Your methods need to have description, specification of parameters, return values, exceptions thrown and any assumptions that they are making. 
+
+A class's data fields and methods should not be declared static unless they are to be shared by all instances of the class or provide access to such data.
+
+You must use backtracking and recursion to produce the list of words.
+
+You may use ArrayList and String classes, but you must implement your own search and sort methods. 
+
+You may use any classes for reading the input from the file.
+
+You may use any exception related classes (if you wish).
